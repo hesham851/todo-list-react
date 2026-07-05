@@ -1,8 +1,6 @@
 import './App.css';
 import TodoList from './componants/todolist';
-import { useContext } from 'react';
 import { Todocontext } from './contexts/todoscontexts';
-import Tasks from './componants/tasks';
 import { useState } from 'react';
 import { v4 as uu} from 'uuid';
 import { useEffect } from 'react';

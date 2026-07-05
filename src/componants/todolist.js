@@ -7,7 +7,6 @@ import { v4 as uu} from 'uuid';
 import { useState } from 'react';
 import { useContext } from 'react';
 import { Todocontext } from '../contexts/todoscontexts';
-import { useEffect } from 'react';
 
 export default function TodoList() {
     
@@ -34,14 +33,14 @@ export default function TodoList() {
   let rendertodo=cont1.inatailstat
 
 
-  if(todotype=="ALL"){
+  if(todotype==="ALL"){
 
-    rendertodo=rendertodo
+   
     // const showtask=cont1.inatailstat.map((t)=>{
     //     return <Tasks tas={t} /> ;
     // })
 
-  }else if (todotype=="Finished") {
+  }else if (todotype==="Finished") {
 
      rendertodo=fineshedtodos
     

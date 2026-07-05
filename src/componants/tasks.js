@@ -20,7 +20,7 @@ export default function Tasks({tas}) {
   const cont2=useContext(Todocontext)
    function check(id){
           const newcheck= cont2.inatailstat.map((taskchecked)=>{
-            if (taskchecked.id == id){
+            if (taskchecked.id === id){
              return { ...taskchecked , isdone: !taskchecked.isdone}
             }else{
               return taskchecked
@@ -73,9 +73,9 @@ const[editinfobox,seteditinfobox]=useState(tas.titele)
 function handalopen(){
   seteditstate(true)
 }
-// function handleClose(){
-//   seteditstate(false)
-// }
+function handleClosex(){
+  seteditstate(false)
+}
 
 function edit(id){
 
@@ -89,7 +89,8 @@ function edit(id){
 
 cont2.setinatailstat(newedit)
       localStorage.setItem("todos",JSON.stringify(newedit))
-  seteditstate(false)
+  
+      seteditstate(false)
 }
 
 /* </editchinge> */
@@ -205,7 +206,7 @@ return (
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
+          <Button onClick={handleClosex}>Cancel</Button>
           <Button onClick={()=>{edit(tas.id)}} type="submit">EDIT</Button>
         </DialogActions>
       </Dialog>
