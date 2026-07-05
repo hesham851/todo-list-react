@@ -80,7 +80,7 @@ function handleClosex(){
 function edit(id){
 
   const newedit=cont2.inatailstat.map((edit1)=>{
-    if(edit1.id == id ){
+    if(edit1.id === id ){
       return {...edit1,titele:editbox,info:editinfobox}
     }else {
       return edit1

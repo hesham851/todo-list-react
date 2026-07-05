@@ -120,7 +120,7 @@ export default function TodoList() {
 
       onClick={()=>{clickfun()}}
        sx={{mt:"40px", ml:"25px", width:"130px ", height:"55px", mb:"15px"}} variant="contained"  
-       disabled={inputstat.length==0}
+       disabled={inputstat.length===0}
        >
         ADD
 
